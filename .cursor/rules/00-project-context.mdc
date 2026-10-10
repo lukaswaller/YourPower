@@ -1,0 +1,9 @@
+---
+alwaysApply: true
+---
+# Project context — YourPower
+- Read docs/05-architecture.md before any structural change; it is the contract.
+- Stack: Flutter (Dart), custom MNA solver in pure Dart, Riverpod, drift. No backend in v1.
+- lib/sim/ never imports Flutter. Never embed GPL code (no CircuitJS); ngspice is BSD.
+- Every level must be validated solvable against the sim before it ships.
+- Keep changes small; one task at a time; update docs when decisions change.
